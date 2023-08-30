@@ -13,7 +13,7 @@ const Contacts = ({ contacts, onDeleteContact }) => {
 					<p>{contact.name}</p>
 					<p>{contact.handle}</p>
 				</div>
-				<button className="contact-remove" onClick={() => onDeleteContact(contact)}>Remove</button>
+				<button className="contact-remove" onClick={() => onDeleteContact(contact)} data-testid={`remove-${contact.id}`}>Remove</button>
 			</li>
 		))}
 	</ol>;
