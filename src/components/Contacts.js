@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 /**
  * Contacts.js
  * 
@@ -19,4 +20,8 @@ const Contacts = ({ contacts, onDeleteContact }) => {
 	</ol>;
 }
 
+Contacts.propTypes = {
+	contacts: PropTypes.array.isRequired,
+	onDeleteContact: PropTypes.func.isRequired
+}
 export default Contacts;
